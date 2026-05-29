@@ -134,14 +134,15 @@
 <plugin>
   <groupId>org.openrewrite.maven</groupId>
   <artifactId>rewrite-maven-plugin</artifactId>
-  <version>5.2.6</version>
+  <version>6.40.0</version>
   <configuration>
     <activeRecipes>
+    	<recipe>org.openrewrite.java.OrderImports</recipe>
       <recipe>org.openrewrite.java.format.AutoFormat</recipe>
     </activeRecipes>
   </configuration>
 </plugin>
-      <plugin>
+	<plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <executions>
